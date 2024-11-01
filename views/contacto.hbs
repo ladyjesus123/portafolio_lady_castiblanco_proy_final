@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Contacto - Lady Castiblanco</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<body class="subpage">
+		<!-- Header -->
+		{{> header}}
+
+		<!-- Nav -->
+		{{> navbar}}
+
+		<section id="contact" class="wrapper" >
+			<div class="inner">
+				<article class="box">
+					<header>
+						<h2>Contáctame</h2>
+					</header>
+					<div class="content">
+						<form action="#" method="post">
+							<div class="field half first">
+								<label for="name">Nombre</label>
+								<input name="name" id="name" type="text" placeholder="Nombre">
+							</div>
+							<div class="field half">
+								<label for="email">Correo Electrónico</label>
+								<input name="email" id="email" type="email" placeholder="Correo Electrónico">
+							</div>
+							<div class="field">
+								<label for="message">Mensaje</label>
+								<textarea name="message" id="message" rows="6" placeholder="Escribe tu mensaje aquí..."></textarea>
+							</div>
+							<ul class="actions">
+								<li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
+							</ul>
+						</form>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		{{> footer}}
+	</body>
+</html>

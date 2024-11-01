@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{{titulo}}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+    <!-- Header - aplicando Partials -->
+    {{>header}}
+
+    <!-- Nav -->
+    {{>navbar}}
+
+   
+    <!-- Proyectos -->
+    <section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
+      <div class="inner">
+				<article class="box">
+					<header>
+						<h2>{{titulo}}</h2>
+						<p>Si tienes alguna sugerencia para que yo mejore con gusto sera recibida</p>
+					</header>
+					<div class="content">
+						<form action="#" method="post">
+							<div class="field half first">
+								<label for="name">Nombre</label>
+								<input name="name" id="name" type="text" placeholder="Nombre">
+							</div>
+							<div class="field half">
+								<label for="email">{{email}}</label>
+								<input name="email" id="email" type="email" placeholder="Correo Electrónico">
+							</div>
+							<div class="field">
+								<label for="message">sugerencia</label>
+								<textarea name="message" id="message" rows="6" placeholder="Escribe tu mensaje aquí..."></textarea>
+							</div>
+							<ul class="actions">
+								<li><input value="Enviar Mensaje" class="button alt" type="submit"></li>
+							</ul>
+						</form>
+					</div>
+				</article>
+			</div>
+    </section>
+
+
+    <!-- Footer - aplicando Partials -->
+    {{>footer}}
+
+</body>
+</html>

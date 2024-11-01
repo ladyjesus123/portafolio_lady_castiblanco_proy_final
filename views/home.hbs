@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>{{titulo}}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+    <!-- Header - aplicando Partials -->
+    {{>header}}
+
+    <!-- Nav -->
+    {{>navbar}}
+
+    <!-- Banner - aplicando Partials -->
+    <section id="banner" class="bg-img" data-bg="banner.jpg">
+        <div class="inner">
+            <header>
+                <h1>Bienvenido al Portafolio de la futura ingeniera {{nombre}}</h1>
+            </header>
+        </div>
+        <a href="#one" class="more">Ver Más</a>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="one" class="wrapper post bg-img" data-bg="banner2.jpg">
+        <div class="inner">
+            <article class="box">
+                <header>
+                    <h2>Sobre Mí</h2>
+                    <p>Conoce un poco más acerca de mí</p>
+                </header>
+                <div class="content">
+                    <p>Mi nombre es {{nombre}}, soy estudiante de Ingeniería en Sistemas. Me apasiona el desarrollo de software y disfruto aprender nuevas tecnologías y aplicarlas en proyectos reales. Este portafolio tiene como objetivo mostrar mi crecimiento en el área de tecnologías de la información.</p>
+                </div>
+            </article>
+        </div>
+        <a href="#two" class="more">Ver Más</a>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="two" class="wrapper post bg-img" data-bg="banner5.jpg">
+        <div class="inner">
+            <article class="box">
+                <header>
+                    <h2>Mis Proyectos</h2>
+                    <p>Proyectos destacados</p>
+                </header>
+                <div class="content">
+                    <p>Aquí encontrarás algunos de los proyectos en los que he trabajado, incluyendo el desarrollo de una aplicación web para la gestión de órdenes de trabajo de un taller mecánico. Estos proyectos reflejan mis habilidades y mi enfoque en resolver problemas de manera efectiva.</p>
+                </div>
+                <footer>
+                    <a href="/proyectos" class="button alt">Ver Proyectos</a>
+                </footer>
+            </article>
+        </div>
+        <a href="#three" class="more">Ver Más</a>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="three" class="wrapper post bg-img" data-bg="banner4.jpg">
+        <div class="inner">
+            <article class="box">
+                <header>
+                    <h2>Habilidades y Destrezas</h2>
+                    <p>Mis conocimientos técnicos</p>
+                </header>
+                <div class="content">
+                    <p>Domino lenguajes como Python, JavaScript, HTML/CSS, y frameworks como React y Node.js. Además, tengo experiencia trabajando con bases de datos como PostgreSQL y MySQL, y utilizo GitHub para el control de versiones. Mi objetivo es seguir aprendiendo y mejorar mis habilidades técnicas.</p>
+                </div>
+            </article>
+        </div>
+        <a href="#four" class="more">Ver Más</a>
+    </section>
+
+    <!-- Contacto -->
+    <section id="four" class="wrapper post bg-img" data-bg="banner3.jpg">
+        <div class="inner">
+            <article class="box">
+                <header>
+                    <h2>Contacto</h2>
+                    <p>Ponerse en contacto conmigo</p>
+                </header>
+                <div class="content">
+                    <p>Si deseas contactarme, puedes enviarme un correo a leidyrcmjdes@gmail.com. Estoy siempre abierta a nuevas oportunidades de aprendizaje y colaboración.</p>
+                </div>
+                <footer>
+                    <a href="/contacto" class="button alt">Contáctame</a>
+                </footer>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer - aplicando Partials -->
+    {{>footer}}
+
+</body>
+</html>
