@@ -5,7 +5,8 @@ require('dotenv').config(); // Importar dotenv para las variables de entorno
 
 // Inicializar express
 const app = express();
-const port = process.env.PORT || 8083;// Se iguala la variable puerto al archivo .env
+const port = process.env.PORT || 3000;
+// Se iguala la variable puerto al archivo .env
 
 
 // llamar a Handlebars hbs
